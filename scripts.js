@@ -32,6 +32,26 @@ var all = lettersUpd0 + lettersUpd1 + lettersUpd2 + lettersUpd3 + lettersUpd4;
 document.getElementById('button').onclick = function() { 
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${all}</p>`;
+    out += `<p role="alert">${all}</p>`;
     callingField.innerHTML = out;
+}
+
+var LBletters = [
+"B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Z"
+];
+var LAletters = [
+"A","E","I","O","Y","U"			
+];
+var LlettersUpd0 = LBletters[Math.floor(Math.random() * 20)];
+var LlettersUpd1 = LAletters[Math.floor(Math.random() * 6)];
+var LlettersUpd2 = LBletters[Math.floor(Math.random() * 20)];
+var LlettersUpd3 = LAletters[Math.floor(Math.random() * 6)];
+var LlettersUpd4 = LBletters[Math.floor(Math.random() * 20)];
+var Lall = LlettersUpd0 + LlettersUpd1 + LlettersUpd2 + LlettersUpd3 + LlettersUpd4;
+
+document.getElementById('buttonL').onclick = function() { 
+    let callingField2 = document.getElementById('calling-field2');
+    let out = '';
+    out += `<p role="alert">${Lall}</p>`;
+    callingField2.innerHTML = out;
 }
